@@ -4,6 +4,8 @@ This fantastic card set features custom commissioned art by the very talented Mi
 
 The product concept and organization was put together by the awesome Jen Looper (contact info below).
 
+All proceeds from the sales go to the VueVixens Scholarship Fund. Head over here to learn more about this fantastic organization [Vue Vixens](https://t.co/MgH1rJ6xn2) helping people who identify as women learn Vue.js to make awesome websites and mobile apps!
+
 ## Where you can buy
 
 Currently the cards are sold as a 20-pack on Etsy:
@@ -15,6 +17,8 @@ Currently the cards are sold as a 20-pack on Etsy:
 ### Jen Looper
 
 - [Twitter](https://twitter.com/jenlooper)
+- Found of [VueVixens.org](https://t.co/MgH1rJ6xn2)
+- [Jen's Site](https://t.co/be6BDqJnzW)
 
 ### Mirlu
 
