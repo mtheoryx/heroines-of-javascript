@@ -198,3 +198,6 @@ scratch.js
 
 # Gatsby Ignores
 public-site/public
+
+public-site/.cache
+public-site/node_modules
