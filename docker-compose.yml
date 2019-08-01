@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  heroines-site:
+    build: ./public-site
+    image: heroines-site
+    container_name: heroines-site
+    command: npm run develop -- -H 0.0.0.0
+    ports:
+      - 8000:8000
+    volumes:
+      - /usr/app/node_modules
+      - ./public-site:/usr/app
