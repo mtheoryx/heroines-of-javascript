@@ -14,6 +14,7 @@ const IndexPage = () => (
       Gatsby, Amplify, and {"<3"} from a stream community.
     </p>
     <p>Now go build something great.</p>
+    <p>And if you break it, that's okay.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
