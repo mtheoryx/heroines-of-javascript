@@ -195,6 +195,9 @@ $RECYCLE.BIN/
 engineer-notes.md
 *.sketch
 scratch.js
+design-assets/card-giveaway/*
+design-assets/heroines-images/*
+design-assets/picsandpdfs/*
 
 # Gatsby Ignores
 public-site/public
