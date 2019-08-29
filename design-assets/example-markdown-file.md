@@ -1,5 +1,5 @@
 ---
-heroine: 'Aalyssa Nicoll'
+heroine: 'Alyssa Nicoll'
 cardFront: ''
 cardBack: ''
 thumbnail: ''
