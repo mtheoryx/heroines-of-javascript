@@ -30,7 +30,9 @@ const IndexPage = ({ data }) => (
           <div className="card">
             <h2>Name: {node.frontmatter.heroine}</h2>
             <p>Title: {node.frontmatter.title}</p>
-            <p>Card Color: {node.frontmatter.color}</p>
+            <p style={{ backgroundColor: node.frontmatter.color }}>
+              Card Color: {node.frontmatter.color}
+            </p>
           </div>
           <hr />
         </React.Fragment>
