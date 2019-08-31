@@ -18,6 +18,7 @@ const IndexPage = ({ data }) => (
       <a
         href="https://github.com/mtheoryx/heroines-of-javascript"
         target="_blank"
+        rel="noopener noreferrer"
       >
         Readme for project info
       </a>
