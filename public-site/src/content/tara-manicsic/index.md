@@ -3,7 +3,7 @@ heroine: "Tara Z. Manicsic"
 cardFront: "./tara-z-manicsic-front.jpeg"
 cardBack: "./tara-z-manicsic-back.jpeg"
 thumbnail: "./tara-manicsic.png"
-title: "Developer Advocat"
+title: "Developer Advocate"
 color: "#009dbb"
 links:
   - github: "tzmanics"
