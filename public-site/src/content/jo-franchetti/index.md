@@ -4,7 +4,7 @@ cardFront: "./jo-franchetti-front.jpeg"
 cardBack: "./jo-franchetti-back.jpeg"
 thumbnail: "./jo-franchetti.png"
 title: "Developer Advocate"
-color: "yellow"
+color: "#ffff7e"
 links:
   - github: "thisisjofrank"
   - mastadon: "thisisjofrank"

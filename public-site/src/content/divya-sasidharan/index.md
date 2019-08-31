@@ -4,7 +4,7 @@ cardFront: "./divya-sashidaran-front.jpeg"
 cardBack: "./divya-sashidaran-back.jpeg"
 thumbnail: "./divya-sashidaran.png"
 title: "Developer Advocate"
-color: "orange"
+color: "#ff9120"
 links:
   - github: "shortdiv"
   - twitter: "shortdiv"

@@ -4,7 +4,7 @@ cardFront: "./tara-z-manicsic-front.jpeg"
 cardBack: "./tara-z-manicsic-back.jpeg"
 thumbnail: "./tara-manicsic.png"
 title: "Developer Advocat"
-color: "cyan"
+color: "#009dbb"
 links:
   - github: "tzmanics"
   - instagram: "tzmanics"

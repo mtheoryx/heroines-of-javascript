@@ -4,7 +4,7 @@ cardFront: "./ali-spittel-front.jpeg"
 cardBack: "./ali-spittel-back.jpeg"
 thumbnail: "./ali-spittel.png"
 title: "Software Engineer"
-color: "green"
+color: "#59dd6c"
 links:
   - github: "aspittel"
   - twitter: "aspittel"

@@ -4,7 +4,7 @@ cardFront: "./emma-wedekind-front.jpeg"
 cardBack: "./emma-edekind-back.jpeg"
 thumbnail: "./emma-wedekind.png"
 title: "UX Engineer"
-color: "red"
+color: "#ff003d"
 links:
   - github: "emmawedekind"
   - twitter: "emmawedekind"

@@ -4,7 +4,7 @@ cardFront: "./sarah-drasner-front.jpeg"
 cardBack: "./sara-drasner-back.jpeg"
 thumbnail: "./sara-drasner.png"
 title: "Principal Developer Advocate"
-color: "cyan"
+color: "#00b7c1"
 links:
   - github: ""
   - twitter: ""

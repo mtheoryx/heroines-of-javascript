@@ -4,7 +4,7 @@ cardFront: "./aysegul-yonet-front.jpeg"
 cardBack: "./aysegul-yonet-back.jpeg"
 thumbnail: "./aysegul-yonet.png"
 title: "Software Engineer"
-color: "red"
+color: "#ff0025"
 links:
   - github: "Yonet"
   - twitter: "AysSomething"

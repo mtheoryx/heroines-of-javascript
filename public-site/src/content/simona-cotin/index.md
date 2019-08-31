@@ -4,7 +4,7 @@ cardFront: "./simona-cotin-front.jpeg"
 cardBack: "./simona-cotin-back.jpeg"
 thumbnail: "./simona-cotin.png"
 title: "Developer Advocate"
-color: "purple"
+color: "#7980b1"
 links:
   - github: "simonaco"
   - twitter: "simona_cotin"

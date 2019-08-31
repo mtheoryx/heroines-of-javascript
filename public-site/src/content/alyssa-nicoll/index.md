@@ -4,7 +4,7 @@ cardFront: "./alyssa-nicoll-front.jpeg"
 cardBack: "./alyssa-nicoll-back.jpeg"
 thumbnail: "./alyssa-nicoll.png"
 title: "Developer Advocate"
-color: "yellow"
+color: "#f5dc28"
 links:
   - github: "AlyssaMichelle"
   - twitter: "AlyssaNicoll"

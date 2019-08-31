@@ -4,7 +4,7 @@ cardFront: "./nitya-narasimhan-front.jpeg"
 cardBack: "./nitya-narasimhan-back.jpeg"
 thumbnail: "./nitya-narasimhan.png"
 title: "Developer Advocate"
-color: "red"
+color: "#ff0022"
 links:
   - github: "Nitya"
   - linkedin: "nityan"

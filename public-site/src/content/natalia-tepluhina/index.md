@@ -4,7 +4,7 @@ cardFront: "./natalia-tepluhina-front.jpeg"
 cardBack: "./natalia-tepluhina-back.jpeg"
 thumbnail: "./natalia-tepluhina.png"
 title: "Senior Frontend Developer"
-color: "purple"
+color: "#7b31d7"
 links:
   - github: "NataliaTepluhina"
   - twitter: "N_Tepluhina"

@@ -4,7 +4,7 @@ cardFront: "./stanimira-vlaeva-front.jpeg"
 cardBack: "./stanimira-vlaeva-back.jpeg"
 thumbnail: "./stanimira-vlaeva.png"
 title: "Software Engineer"
-color: "blue"
+color: "#288dff"
 links:
   - github: "sis0k0"
   - twitter: "StanimiraVlaeva"

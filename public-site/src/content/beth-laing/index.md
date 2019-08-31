@@ -4,7 +4,7 @@ cardFront: "./beth-laing-front.jpeg"
 cardBack: "./beth-laing-back.jpeg"
 thumbnail: "./beth-laing.png"
 title: "Software Developer"
-color: "maroon"
+color: "#aa263e"
 links:
   - github: "laingbeth"
   - twitter: "laingbeth"

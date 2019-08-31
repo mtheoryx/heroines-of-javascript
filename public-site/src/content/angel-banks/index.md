@@ -4,7 +4,7 @@ cardFront: "./angel-banks-front.jpeg"
 cardBack: "./angel-banks-back.jpeg"
 thumbnail: "./angel-banks.png"
 title: "Software Developer"
-color: "red"
+color: "#ff2752"
 links:
   - instagram: "angel.m.banks"
   - twitter: "angelmbanks"
