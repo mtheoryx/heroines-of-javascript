@@ -1,10 +1,10 @@
 ---
 heroine: "Kara Erickson"
-cardFront: ""
-cardBack: ""
-thumbnail: ""
+cardFront: "./kara-erickson-front.jpeg"
+cardBack: "./kara-erickson-back.jpeg"
+thumbnail: "./kara-erickson.png"
 title: "Software Engineer"
-color: "green"
+color: "#87d91a"
 links:
   - github: "kara"
   - twitter: "karaforthewin"

@@ -1,10 +1,10 @@
 ---
 heroine: "Jen Looper"
-cardFront: ""
-cardBack: ""
-thumbnail: ""
+cardFront: "./jen-looper-front.jpeg"
+cardBack: "./jen-looper-back.jpeg"
+thumbnail: "./jen-looper.png"
 title: "Developer Advocate"
-color: "blue"
+color: "#b6d4c9"
 links:
   - github: "jlooper"
   - twitter: "jenlooper"
