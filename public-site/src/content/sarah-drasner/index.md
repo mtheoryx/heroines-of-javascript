@@ -1,8 +1,8 @@
 ---
 heroine: "Sarah Drasner"
 cardFront: "./sarah-drasner-front.jpeg"
-cardBack: "./sara-drasner-back.jpeg"
-thumbnail: "./sara-drasner.png"
+cardBack: "./sarah-drasner-back.jpeg"
+thumbnail: "./sarah-drasner.png"
 title: "Principal Developer Advocate"
 color: "#00b7c1"
 links:

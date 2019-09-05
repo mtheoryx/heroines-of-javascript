@@ -8,16 +8,25 @@ All proceeds from the sales go to the VueVixens Scholarship Fund. Head over here
 
 ## Where you can buy
 
-Currently the cards are sold as a 20-pack on Etsy:
+**Update**: Currently sold out
+
+~~Currently the cards are sold as a 20-pack on Etsy:~~
 
 [Jen Looper's Etsy Product Page](https://t.co/w6tood9Mx9)
+
+## Where you can view the cards
+
+We are building a site featuring all thumbnails, pics of the cards, and information for all of
+the Heroines of Javascript [currently hosted on this site](https://women-in-tech.online).
+
+To follow along with our progress, you can check out our [livestream of coding here.](https://twitch.tv/roberttables)
 
 ## Creators
 
 ### Jen Looper
 
 - [Twitter](https://twitter.com/jenlooper)
-- Found of [VueVixens.org](https://t.co/MgH1rJ6xn2)
+- Founder of [VueVixens.org](https://t.co/MgH1rJ6xn2)
 - [Jen's Site](https://t.co/be6BDqJnzW)
 
 ### Mirlu

@@ -7,13 +7,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
@@ -26,7 +19,6 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -34,6 +26,21 @@ module.exports = {
       options: {
         name: `stream-heroines-pages`,
         path: `${__dirname}/src/content`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-humans-txt`,
+      options: {
+        team: [
+          {
+            Developer: `David Poindexter`,
+          },
+          {
+            Developer: `roberttable livestream`,
+          },
+        ],
+        thanks: [`Gatsby`, `Node`, `Twitch`, `AWS Amplify`],
+        note: `Made in Indianapolis with <3`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
