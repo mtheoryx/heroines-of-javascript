@@ -28,6 +28,21 @@ module.exports = {
         path: `${__dirname}/src/content`,
       },
     },
+    {
+      resolve: `gatsby-plugin-humans-txt`,
+      options: {
+        team: [
+          {
+            Developer: `David Poindexter`,
+          },
+          {
+            Developer: `roberttable livestream`,
+          },
+        ],
+        thanks: [`Gatsby`, `Node`, `Twitch`, `AWS Amplify`],
+        note: `Made in Indianapolis with ❤️`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
