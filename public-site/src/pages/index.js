@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -28,8 +29,21 @@ const IndexPage = ({ data }) => (
       {data.Heroines.edges.map(({ node }) => (
         <React.Fragment key={node.id}>
           <div className="card">
-            <h2>Name: {node.frontmatter.heroine}</h2>
+            <h2>{node.frontmatter.heroine}</h2>
+            {/* Put thumbnail here */}
+            <Img
+              fluid={node.frontmatter.thumbnail.childImageSharp.fluid}
+              alt={`${node.frontmatter.heroine}'s Thumbnail Illustration`}
+            />
+            {/* {node.frontmatter.thumbnail && (
+              <img
+                src={node.frontmatter.thumbnail.relativePath}
+                alt={`${node.frontmatter.heroine}'s Thumbnail Illustration`}
+              />
+            )} */}
+            {/* <p>{node.frontmatter.thumbnail.childImageSharp.fluid.src}</p> */}
             <p>Title: {node.frontmatter.title}</p>
+            <p>{node.excerpt}</p>
             <p style={{ backgroundColor: node.frontmatter.color }}>
               Card Color: {node.frontmatter.color}
             </p>
@@ -55,7 +69,15 @@ export const pageQuery = graphql`
             heroine
             title
             color
+            thumbnail {
+              childImageSharp {
+                fluid(maxWidth: 300) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
+          excerpt(truncate: true, pruneLength: 80)
         }
       }
     }
