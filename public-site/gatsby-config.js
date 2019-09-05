@@ -40,7 +40,7 @@ module.exports = {
           },
         ],
         thanks: [`Gatsby`, `Node`, `Twitch`, `AWS Amplify`],
-        note: `Made in Indianapolis with ❤️`,
+        note: `Made in Indianapolis with <3`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
