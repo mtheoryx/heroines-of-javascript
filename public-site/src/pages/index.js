@@ -4,6 +4,16 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import styled from "styled-components"
+
+const Card = styled.div`
+  border: 5px solid;
+  border-color: ${props => props.color};
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+`
+
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Heroines Gallery Home" />
@@ -28,26 +38,18 @@ const IndexPage = ({ data }) => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       {data.Heroines.edges.map(({ node }) => (
         <React.Fragment key={node.id}>
-          <div className="card">
+          <Card color={node.frontmatter.color}>
             <h2>{node.frontmatter.heroine}</h2>
-            {/* Put thumbnail here */}
             <Img
               fluid={node.frontmatter.thumbnail.childImageSharp.fluid}
               alt={`${node.frontmatter.heroine}'s Thumbnail Illustration`}
             />
-            {/* {node.frontmatter.thumbnail && (
-              <img
-                src={node.frontmatter.thumbnail.relativePath}
-                alt={`${node.frontmatter.heroine}'s Thumbnail Illustration`}
-              />
-            )} */}
-            {/* <p>{node.frontmatter.thumbnail.childImageSharp.fluid.src}</p> */}
             <p>Title: {node.frontmatter.title}</p>
             <p>{node.excerpt}</p>
             <p style={{ backgroundColor: node.frontmatter.color }}>
               Card Color: {node.frontmatter.color}
             </p>
-          </div>
+          </Card>
           <hr />
         </React.Fragment>
       ))}
