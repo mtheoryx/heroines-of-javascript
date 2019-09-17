@@ -14,8 +14,8 @@ const Card = styled.div`
   padding: 10px;
 `
 
-const CardColor = style.p`
-  background-color: ${props.color}
+const CardColor = styled.p`
+  background-color: ${props => props.color};
 `
 
 const HeroinesPage = ({ data }) => (
