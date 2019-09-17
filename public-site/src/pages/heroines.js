@@ -7,11 +7,15 @@ import SEO from "../components/seo"
 import styled from "styled-components"
 
 const Card = styled.div`
-  border: 25px solid;
+  border: 10px solid;
   border-color: ${props => props.color};
   border-radius: 15px;
   margin: 5px;
   padding: 10px;
+`
+
+const CardColor = style.p`
+  background-color: ${props.color}
 `
 
 const HeroinesPage = ({ data }) => (
@@ -46,9 +50,9 @@ const HeroinesPage = ({ data }) => (
             />
             <p>Title: {node.frontmatter.title}</p>
             <p>{node.excerpt}</p>
-            <p style={{ backgroundColor: node.frontmatter.color }}>
+            <CardColor color={node.frontmatter.color}>
               Card Color: {node.frontmatter.color}
-            </p>
+            </CardColor>
           </Card>
           <hr />
         </React.Fragment>
