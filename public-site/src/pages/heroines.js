@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -12,6 +12,9 @@ const Card = styled.div`
   border-radius: 15px;
   margin: 5px;
   padding: 10px;
+  a {
+    text-decoration: none;
+  }
 `
 
 const CardColor = styled.p`
@@ -43,18 +46,19 @@ const HeroinesPage = ({ data }) => (
       {data.Heroines.edges.map(({ node }) => (
         <React.Fragment key={node.id}>
           <Card color={node.frontmatter.color}>
-            <h2>{node.frontmatter.heroine}</h2>
-            <Img
-              fluid={node.frontmatter.thumbnail.childImageSharp.fluid}
-              alt={`${node.frontmatter.heroine}'s Thumbnail Illustration`}
-            />
-            <p>Title: {node.frontmatter.title}</p>
-            <p>{node.excerpt}</p>
-            <CardColor color={node.frontmatter.color}>
-              Card Color: {node.frontmatter.color}
-            </CardColor>
+            <Link to={node.fields.slug}>
+              <h2>{node.frontmatter.heroine}</h2>
+              <Img
+                fluid={node.frontmatter.thumbnail.childImageSharp.fluid}
+                alt={`${node.frontmatter.heroine}'s Thumbnail Illustration`}
+              />
+              <p>Title: {node.frontmatter.title}</p>
+              <p>{node.excerpt}</p>
+              <CardColor color={node.frontmatter.color}>
+                Card Color: {node.frontmatter.color}
+              </CardColor>
+            </Link>
           </Card>
-          <hr />
         </React.Fragment>
       ))}
     </div>
@@ -71,6 +75,9 @@ export const pageQuery = graphql`
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
             heroine
             title
