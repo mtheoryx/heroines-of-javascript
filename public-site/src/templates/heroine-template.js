@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-// import Img from "gatsby-image"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -11,8 +11,12 @@ const HeroinePage = ({ data }) => (
     <SEO title={data.markdownRemark.frontmatter.heroine} />
 
     <hr />
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <div style={{ marginBottom: `1.45rem` }}>
       <h1>{data.markdownRemark.frontmatter.heroine}</h1>
+      <p>{data.markdownRemark.frontmatter.title}</p>
+      <Img
+        fluid={data.markdownRemark.frontmatter.thumbnail.childImageSharp.fluid}
+      />
       <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
     </div>
   </Layout>
@@ -23,10 +27,17 @@ export default HeroinePage
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
       frontmatter {
         heroine
         color
+        title
+        thumbnail {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         links {
           github
           instagram
@@ -37,8 +48,22 @@ export const query = graphql`
           web
           youtube
         }
-        title
+        cardBack {
+          childImageSharp {
+            fixed {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        cardFront {
+          childImageSharp {
+            fixed {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
+      html
     }
   }
 `
