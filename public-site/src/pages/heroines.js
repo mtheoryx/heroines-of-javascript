@@ -21,9 +21,24 @@ const Card = styled.div`
   border-radius: 15px;
   margin: 5px;
   padding: 10px;
+  .smol {
+    font-size: .8em;
+    color: #999;
+  }
   a {
     text-decoration: none;
+    color: #333;
   }
+  p {
+    margin-bottom: 5px;
+  }
+  h2 {
+    margin-bottom: 0px;
+  }
+  img {
+    max-height: 225px;
+  }
+
 `
 
 const CardColor = styled.p`
@@ -55,15 +70,12 @@ const HeroinesPage = ({ data }) => (
         <Card color={node.frontmatter.color} key={node.id}>
           <Link to={node.fields.slug}>
             <h2>{node.frontmatter.heroine}</h2>
+            <p class="smol">{node.frontmatter.title}</p>
             <Img
               fluid={node.frontmatter.thumbnail.childImageSharp.fluid}
               alt={`${node.frontmatter.heroine}'s Thumbnail Illustration`}
             />
-            <p>Title: {node.frontmatter.title}</p>
             <p>{node.excerpt}</p>
-            <CardColor color={node.frontmatter.color}>
-              Card Color: {node.frontmatter.color}
-            </CardColor>
           </Link>
         </Card>
       ))}

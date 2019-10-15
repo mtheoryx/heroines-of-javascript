@@ -37,9 +37,9 @@ const IndexPage = ({ data }) => (
       />
     </SideBySide>
 
-    <p style={{ fontStyle: "italic" }}>NOT: The set is currently sold-out.</p>
+    <p style={{ fontStyle: "italic" }}>NOTE: The set is currently sold-out.</p>
 
-    <h3>We took it a littler further...</h3>
+    <h3>We took it a little further...</h3>
 
     <SideBySide>
       <Img
@@ -66,7 +66,7 @@ const IndexPage = ({ data }) => (
       <p>
         Mike set up a series of remote interviews with each of the Heroines of
         JavaScript. They were interviewed by both of his daughters, also
-        intereste in learning from women in tech about their backgrounds,
+        interested in learning from women in tech about their backgrounds,
         challenges faced, and advice for becoming a future woman in tech. And
         they were some amazing interviews!
       </p>
@@ -78,7 +78,7 @@ const IndexPage = ({ data }) => (
     </SideBySide>
 
     <p style={{ fontStyle: "italic" }}>
-      NOT: That series is currently paused for the season and will resume in the
+      NOTE: That series is currently paused for the season and will resume in the
       future.
     </p>
     <h2>This site is dedicated to the project the impact it has made</h2>
