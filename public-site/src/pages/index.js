@@ -78,8 +78,8 @@ const IndexPage = ({ data }) => (
     </SideBySide>
 
     <p style={{ fontStyle: "italic" }}>
-      NOTE: That series is currently paused for the season and will resume in the
-      future.
+      NOTE: That series is currently paused for the season and will resume in
+      the future.
     </p>
     <h2>This site is dedicated to the project the impact it has made</h2>
     <p>
