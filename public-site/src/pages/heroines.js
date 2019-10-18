@@ -22,7 +22,7 @@ const Card = styled.div`
   margin: 5px;
   padding: 10px;
   .smol {
-    font-size: .8em;
+    font-size: 0.8em;
     color: #999;
   }
   a {
@@ -38,7 +38,6 @@ const Card = styled.div`
   img {
     max-height: 225px;
   }
-
 `
 
 const CardColor = styled.p`
@@ -70,7 +69,7 @@ const HeroinesPage = ({ data }) => (
         <Card color={node.frontmatter.color} key={node.id}>
           <Link to={node.fields.slug}>
             <h2>{node.frontmatter.heroine}</h2>
-            <p class="smol">{node.frontmatter.title}</p>
+            <p className="smol">{node.frontmatter.title}</p>
             <Img
               fluid={node.frontmatter.thumbnail.childImageSharp.fluid}
               alt={`${node.frontmatter.heroine}'s Thumbnail Illustration`}
