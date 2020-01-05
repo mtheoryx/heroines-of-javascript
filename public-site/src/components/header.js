@@ -5,8 +5,8 @@ import styled from "styled-components"
 
 const navLinks = [
   { destination: "/heroines", readable: "The Heroines" },
-  { destination: "/vuevixens", readable: "Vue Vixens" },
-  { destination: "/contact", readable: "Contact" },
+  // { destination: "/vuevixens", readable: "Vue Vixens" },
+  // { destination: "/contact", readable: "Contact" },
 ]
 
 const Nav = ({ className }) => (

@@ -30,7 +30,7 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/templates/heroine-template.js`),
+      component: path.resolve(`./src/templates/heroine.js`),
       context: {
         slug: node.fields.slug,
       },

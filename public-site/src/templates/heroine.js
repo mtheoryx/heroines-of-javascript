@@ -10,15 +10,31 @@ const HeroinePage = ({ data }) => (
   <Layout>
     <SEO title={data.markdownRemark.frontmatter.heroine} />
 
-    <hr />
     <div style={{ marginBottom: `1.45rem` }}>
       <h1>{data.markdownRemark.frontmatter.heroine}</h1>
-      <p>{data.markdownRemark.frontmatter.title}</p>
+      <p style={{ marginTop: "10px" }}>
+        {data.markdownRemark.frontmatter.title}
+      </p>
       <Img
         fluid={data.markdownRemark.frontmatter.thumbnail.childImageSharp.fluid}
       />
-      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+      <div
+        style={{ marginTop: "20px" }}
+        dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+      />
+      <hr />
+      <h3>Here are pictures of the cards</h3>
+      <h4>Front of Card</h4>
+      <Img
+        fluid={data.markdownRemark.frontmatter.cardFront.childImageSharp.fluid}
+      />
+      <hr />
+      <h4>Back of Card</h4>
+      <Img
+        fluid={data.markdownRemark.frontmatter.cardBack.childImageSharp.fluid}
+      />
     </div>
+    <hr />
   </Layout>
 )
 
@@ -34,6 +50,20 @@ export const query = graphql`
         thumbnail {
           childImageSharp {
             fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        cardFront {
+          childImageSharp {
+            fluid(maxWidth: 300) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        cardBack {
+          childImageSharp {
+            fluid(maxWidth: 300) {
               ...GatsbyImageSharpFluid
             }
           }

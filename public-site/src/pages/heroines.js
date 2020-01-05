@@ -14,7 +14,6 @@ const CardContainer = styled.div`
 
 const Card = styled.div`
   width: 32%;
-  max-width: 32%;
   min-width: 200px;
   border: 10px solid;
   border-color: ${props => props.color};
@@ -38,10 +37,6 @@ const Card = styled.div`
   img {
     max-height: 225px;
   }
-`
-
-const CardColor = styled.p`
-  background-color: ${props => props.color};
 `
 
 const HeroinesPage = ({ data }) => (
