@@ -8,7 +8,7 @@ color: "#ff2752"
 links:
   - instagram: "angel.m.banks"
   - twitter: "angelmbanks"
-  - web: "angelbanks.com"
+  - web: "https://www.angelbanks.com/"
 ---
 
 Angel Banks has a background in front-end development and currently specializes in product management and design strategy for enterprise, finance, healthcare, and biotech applications.
