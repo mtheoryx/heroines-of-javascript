@@ -3,68 +3,32 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-const mergeLinks = links => {
-  return links.map(link => {
-    Object.keys(link).forEach(key => link[key] === null && delete link[key])
-    return link
-  })
-}
-
-const socialLinkFormater = link => {
-  // Formats a link based on the type of link
-  const linkType = Object.keys(link)[0]
-  const username = link[Object.keys(link)]
-
-  const socialToLink = {
-    github: "https://github.com/",
-    instagram: "https://instagram.com/",
-    twitter: "https://twitter.com/",
-    linkedin: "https://linkedin.com/in/",
-    mastadon: "https://mastadon.technology/@",
-    youtube: "https://youtube.com/user/",
-    medium: "https://medium.com/@",
-    web: "",
-  }
-
-  return `${socialToLink[linkType]}${username}`
-}
+import Social from "../components/social"
 
 const HeroinePage = ({ data }) => {
-  const socialLinks = mergeLinks(data.markdownRemark.frontmatter.links)
   return (
     <Layout>
       <SEO title={data.markdownRemark.frontmatter.heroine} />
 
       <div style={{ marginBottom: `1.45rem` }}>
         <h1>{data.markdownRemark.frontmatter.heroine}</h1>
-        <p style={{ marginTop: "10px" }}>
+        <p style={{ marginTop: "10px", fontSize: `1.5rem` }}>
           {data.markdownRemark.frontmatter.title}
         </p>
-        <ul>
-          {socialLinks.map(link => (
-            <li>
-              <a
-                target="_blank"
-                href={socialLinkFormater(link)}
-                rel="noopener noreferrer"
-              >
-                {Object.keys(link)}: {link[Object.keys(link)]}
-              </a>
-            </li>
-          ))}
-        </ul>
+
+        <Social links={data.markdownRemark.frontmatter.links} />
+
+        <div
+          style={{ marginTop: "20px" }}
+          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+        />
         <Img
           fluid={
             data.markdownRemark.frontmatter.thumbnail.childImageSharp.fluid
           }
         />
-        <div
-          style={{ marginTop: "20px" }}
-          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-        />
-        <hr />
-        <h3>Here are pictures of the cards</h3>
+
+        <h3>Photos of the physical cards</h3>
         <h4>Front of Card</h4>
         <Img
           fluid={
