@@ -12,32 +12,22 @@ const mergeLinks = links => {
 }
 
 const socialLinkFormater = link => {
-  // Detect the link key
-  // Switch on the key's name
-  // Do decide the URL output for the platform
-  // Including the link object's value (the username)
+  // Formats a link based on the type of link
   const linkType = Object.keys(link)[0]
+  const username = link[Object.keys(link)]
 
-  switch (linkType) {
-    case "github":
-      return `https://github.com/${link[Object.keys(link)]}`
-    case "instagram":
-      return `https://instagram.com/${link[Object.keys(link)]}`
-    case "twitter":
-      return `https://twitter.com/${link[Object.keys(link)]}`
-    case "linkedin":
-      return `https://linkedin.com/in/${link[Object.keys(link)]}`
-    case "mastadon":
-      return `https://mastadon.technology/@${link[Object.keys(link)]}`
-    case "youtube":
-      return `https://youtube.com/user/${link[Object.keys(link)]}`
-    case "medium":
-      return `https://medium.com/@${link[Object.keys(link)]}`
-    case "web":
-      return `${link[Object.keys(link)]}`
-    default:
-      return "#"
+  const socialToLink = {
+    github: "https://github.com/",
+    instagram: "https://instagram.com/",
+    twitter: "https://twitter.com/",
+    linkedin: "https://linkedin.com/in/",
+    mastadon: "https://mastadon.technology/@",
+    youtube: "https://youtube.com/user/",
+    medium: "https://medium.com/@",
+    web: "",
   }
+
+  return `${socialToLink[linkType]}${username}`
 }
 
 const HeroinePage = ({ data }) => {
@@ -54,7 +44,11 @@ const HeroinePage = ({ data }) => {
         <ul>
           {socialLinks.map(link => (
             <li>
-              <a target="_blank" href={socialLinkFormater(link)}>
+              <a
+                target="_blank"
+                href={socialLinkFormater(link)}
+                rel="noopener noreferrer"
+              >
                 {Object.keys(link)}: {link[Object.keys(link)]}
               </a>
             </li>
