@@ -6,15 +6,28 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const SideBySide = styled.div`
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 20px;
-  > * {
-    width: 48%;
+  @media screen and (min-width: 700px) {
+    display: flex;
+    flex-direction: row;
   }
+
+  margin-bottom: 20px;
+
   img {
     height: auto;
     width: 100%;
+  }
+`
+
+const Primary = styled.div`
+  @media screen and (min-width: 700px) {
+    width: 60%;
+    padding-right: 10px;
+  }
+`
+const Secondary = styled.div`
+  @media screen and (min-width: 700px) {
+    width: 40%;
   }
 `
 
@@ -25,16 +38,20 @@ const IndexPage = ({ data }) => (
     <h2>It started off very small..</h2>
 
     <SideBySide>
-      <p>
-        Jen Looper and Mirlu collaborated to put together a printed card set
-        featuring 20 women in tech. All proceeds went to the Vue Vixens
-        Scholarship Fund.
-      </p>
-      <Img
-        fluid={data.giveaway.childImageSharp.fluid}
-        alt="Five shrink-wrapped packages of printed cards from the Heroines of JavaScript project displayed in a fan on a desk with packages of resistors in the background."
-        loading="eager"
-      />
+      <Primary>
+        <p>
+          Jen Looper and Mirlu collaborated to put together a printed card set
+          featuring 20 women in tech. All proceeds went to the Vue Vixens
+          Scholarship Fund.
+        </p>
+      </Primary>
+      <Secondary>
+        <Img
+          fluid={data.giveaway.childImageSharp.fluid}
+          alt="Five shrink-wrapped packages of printed cards from the Heroines of JavaScript project displayed in a fan on a desk with packages of resistors in the background."
+          loading="eager"
+        />
+      </Secondary>
     </SideBySide>
 
     <p style={{ fontStyle: "italic" }}>NOTE: The set is currently sold-out.</p>
@@ -42,17 +59,21 @@ const IndexPage = ({ data }) => (
     <h3>We took it a little further...</h3>
 
     <SideBySide>
-      <Img
-        fluid={data.mike.childImageSharp.fluid}
-        alt="Mike Jolley on stream while holding up a card"
-        loading="lazy"
-      />
-      <p style={{ paddingLeft: 10 }}>
-        In addition to wanting a set for myself, I got 5 additional sets. These
-        became a stream giveaway on Twitch (roberttables). The winners were
-        viewers all over the world. One such winner was a fellow tech streamer
-        on twitch, Mike Jolley (theMichaelJolley).
-      </p>
+      <Primary>
+        <Img
+          fluid={data.mike.childImageSharp.fluid}
+          alt="Mike Jolley on stream while holding up a card"
+          loading="lazy"
+        />
+      </Primary>
+      <Secondary>
+        <p style={{ paddingLeft: 10 }}>
+          In addition to wanting a set for myself, I got 5 additional sets.
+          These became a stream giveaway on Twitch (roberttables). The winners
+          were viewers all over the world. One such winner was a fellow tech
+          streamer on twitch, Mike Jolley (theMichaelJolley).
+        </p>
+      </Secondary>
     </SideBySide>
 
     <h3>...And it had amazing results</h3>
@@ -63,18 +84,22 @@ const IndexPage = ({ data }) => (
     </p>
 
     <SideBySide>
-      <p>
-        Mike set up a series of remote interviews with each of the Heroines of
-        JavaScript. They were interviewed by both of his daughters, also
-        interested in learning from women in tech about their backgrounds,
-        challenges faced, and advice for becoming a future woman in tech. And
-        they were some amazing interviews!
-      </p>
-      <Img
-        fluid={data.interview.childImageSharp.fluid}
-        alt="Mike Jolley and daughters interviewing a Heroine of JavaScript"
-        loading="lazy"
-      />
+      <Primary>
+        <p>
+          Mike set up a series of remote interviews with each of the Heroines of
+          JavaScript. They were interviewed by both of his daughters, also
+          interested in learning from women in tech about their backgrounds,
+          challenges faced, and advice for becoming a future woman in tech. And
+          they were some amazing interviews!
+        </p>
+      </Primary>
+      <Secondary>
+        <Img
+          fluid={data.interview.childImageSharp.fluid}
+          alt="Mike Jolley and daughters interviewing a Heroine of JavaScript"
+          loading="lazy"
+        />
+      </Secondary>
     </SideBySide>
 
     <p style={{ fontStyle: "italic" }}>
