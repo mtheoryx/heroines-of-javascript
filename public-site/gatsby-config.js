@@ -17,7 +17,6 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
-
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -44,12 +43,21 @@ module.exports = {
         team: [
           {
             Developer: `David Poindexter`,
+            Github: `mtheoryx`,
+            Twitter: `@drpoindexter`,
           },
           {
-            Developer: `roberttable livestream`,
+            Developer: `roberttables' livestream`,
+            Site: `https://www.twitch.tv/roberttables`,
           },
         ],
         thanks: [`Gatsby`, `Node`, `Twitch`, `AWS Amplify`],
+        site: {
+          "Last update": `${new Date().getMonth()}/${new Date().getDate()}/${new Date().getFullYear()}`,
+          Standards: `ECMAScript 6`,
+          Components: `Gatsby`,
+          Softwares: `VS Code`,
+        },
         note: `Made in Indianapolis with <3`,
       },
     },
