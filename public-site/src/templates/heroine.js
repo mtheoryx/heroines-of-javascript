@@ -31,7 +31,7 @@ const Secondary = styled.div`
 
 const HeroinePage = ({ data }) => {
   return (
-    <Layout>
+    <Layout color={data.markdownRemark.frontmatter.color}>
       <SEO title={data.markdownRemark.frontmatter.heroine} />
 
       <Main>

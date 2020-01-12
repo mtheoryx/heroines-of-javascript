@@ -17,10 +17,19 @@ const StyledLink = styled(Link)`
   color: white;
   text-decoration: none;
 `
-
 const HeaderColorBorder = styled.div`
   width: 100%;
   height: 15px;
+  margin-bottom: 1.45rem;
+  background-color: ${props => (props.color ? props.color : `white`)};
+`
+
+// Rainbow animation adapted from code found here
+// https://codepen.io/nohoid/pen/kIfto?editors=0100
+const HeaderRainbowBorder = styled.div`
+  width: 100%;
+  height: 15px;
+  margin-bottom: 1.45rem;
   background: linear-gradient(
     124deg,
     #ff2400,
@@ -57,10 +66,9 @@ const HeaderColorBorder = styled.div`
       50%{background-position:100% 19%}
       100%{background-position:0% 82%}
   }
-  margin-bottom: 1.45rem;
 `
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, color = "rainbow" }) => (
   <>
     <StyledHeader>
       <HeaderWrapper>
@@ -70,7 +78,11 @@ const Header = ({ siteTitle }) => (
         <Navigation />
       </HeaderWrapper>
     </StyledHeader>
-    <HeaderColorBorder />
+    {color === "rainbow" ? (
+      <HeaderRainbowBorder />
+    ) : (
+      <HeaderColorBorder color={color} />
+    )}
   </>
 )
 
