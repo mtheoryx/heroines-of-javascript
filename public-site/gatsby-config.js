@@ -6,6 +6,7 @@ module.exports = {
     description: `The roberttables livestream project that presents and accessible form of
       the limited edition 'Heroines of Javascript' card project.`,
     author: `David Poindexter (roberttables)`,
+    siteUrl: `https://women-in-tech.online`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -62,6 +63,20 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        createLinkInHead: true,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: `https://women-in-tech.online`,
+        sitemap: `https://women-in-tech.online/sitemap.xml`,
+        policy: [{ userAgent: "*", disallow: "" }],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
