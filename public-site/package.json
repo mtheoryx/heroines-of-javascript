@@ -29,6 +29,7 @@
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
+    "@storybook/react": "^5.3.5",
     "gatsby-transformer-remark": "^2.6.19"
   },
   "keywords": [
@@ -40,7 +41,8 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "storybook": "start-storybook -p 6006"
   },
   "repository": {
     "type": "git",
