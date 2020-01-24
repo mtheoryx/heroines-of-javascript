@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const navLinks = [
   { destination: "/heroines", readable: "The Heroines" },
-  // { destination: "/vuevixens", readable: "Vue Vixens" },
+  { destination: "/about", readable: "About These Cards" },
   // { destination: "/contact", readable: "Contact" },
 ]
 
