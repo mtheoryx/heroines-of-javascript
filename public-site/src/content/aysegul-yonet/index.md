@@ -5,6 +5,7 @@ cardBack: "./aysegul-yonet-back.jpeg"
 thumbnail: "./aysegul-yonet.png"
 title: "Software Engineer"
 color: "#ff0025"
+ogcolor: ""
 links:
   - github: "Yonet"
   - twitter: "AysSomething"

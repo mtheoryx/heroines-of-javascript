@@ -5,6 +5,7 @@ cardBack: "./kara-erickson-back.jpeg"
 thumbnail: "./kara-erickson.png"
 title: "Software Engineer"
 color: "#87d91a"
+ogcolor: ""
 links:
   - github: "kara"
   - twitter: "karaforthewin"

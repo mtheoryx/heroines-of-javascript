@@ -5,6 +5,7 @@ cardBack: "./jen-looper-back.jpeg"
 thumbnail: "./jen-looper.png"
 title: "Developer Advocate"
 color: "#b6d4c9"
+ogcolor: ""
 links:
   - github: "jlooper"
   - twitter: "jenlooper"

@@ -5,6 +5,7 @@ cardBack: "./diana-rodriguez-back.jpg"
 thumbnail: "./diana-rodriguez.jpg"
 title: "Chief DevOps Architect"
 color: "#be2fc7"
+ogcolor: ""
 links:
   - github: "alphacentauri82"
   - twitter: "cotufa82"

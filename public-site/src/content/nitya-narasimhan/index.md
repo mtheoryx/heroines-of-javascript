@@ -5,6 +5,7 @@ cardBack: "./nitya-narasimhan-back.jpeg"
 thumbnail: "./nitya-narasimhan.png"
 title: "Developer Advocate"
 color: "#ff0022"
+ogcolor: ""
 links:
   - github: "Nitya"
   - linkedin: "nityan"
