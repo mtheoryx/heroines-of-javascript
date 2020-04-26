@@ -5,7 +5,7 @@ cardBack: "./divya-sasidharan-back.jpeg"
 thumbnail: "./divya-sasidharan.png"
 title: "Developer Advocate"
 color: "#ff9120"
-ogcolor: ""
+ogcolor: "fire"
 links:
   - github: "shortdiv"
   - twitter: "shortdiv"

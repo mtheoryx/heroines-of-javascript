@@ -5,7 +5,7 @@ cardBack: "./sara-vieira-back.jpeg"
 thumbnail: "./sara-vieira.png"
 title: "Developer"
 color: "#009c54"
-ogcolor: ""
+ogcolor: "green"
 links:
   - github: "SaraVieira"
   - twitter: "NikkitaFTW"

@@ -5,7 +5,7 @@ cardBack: "./anjana-vakil-back.jpeg"
 thumbnail: "./anjana-vakil.png"
 title: "Software Developer"
 color: "#ff3819"
-ogcolor: ""
+ogcolor: "fire"
 links:
   - github: "vakila"
   - twitter: "AnjanaVakil"

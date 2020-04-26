@@ -5,7 +5,7 @@ cardBack: "./emma-bostian-back.jpeg"
 thumbnail: "./emma-bostian.png"
 title: "UX Engineer"
 color: "#ff003d"
-ogcolor: ""
+ogcolor: "red"
 links:
   - github: "emmabostian"
   - twitter: "EmmaBostian"

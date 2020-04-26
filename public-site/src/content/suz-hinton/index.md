@@ -5,7 +5,7 @@ cardBack: "./suz-hinton-back.jpeg"
 thumbnail: "./suz-hinton.png"
 title: "Developer Advocate"
 color: "#46e0a3"
-ogcolor: ""
+ogcolor: "green"
 links:
   - github: "noopkat"
   - twitter: "noopkat"
