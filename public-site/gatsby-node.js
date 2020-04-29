@@ -1,4 +1,5 @@
 const path = require("path")
+const fs = require("fs")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -10,6 +11,26 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: `slug`,
       value: `/heroines${slug}`,
     })
+    // createNodeField({
+    //   node,
+    //   name: `portrait`,
+    //   value: fs.readFileSync(
+    //     path.resolve(
+    //       `./src/content${slug}${node.frontmatter.thumbnail.substr(2)}`
+    //     ),
+    //     { encoding: "base64" }
+    //   ),
+    // })
+    // createNodeField({
+    //   node,
+    //   name: `background`,
+    //   value: fs.readFileSync(
+    //     path.resolve(
+    //       `./src/images/og-backgrounds/${node.frontmatter.ogcolor}.jpg`
+    //     ),
+    //     { encoding: "base64" }
+    //   ),
+    // })
   }
 }
 exports.createPages = async ({ graphql, actions }) => {
@@ -30,7 +51,7 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/templates/heroine-template.js`),
+      component: path.resolve(`./src/templates/heroine.js`),
       context: {
         slug: node.fields.slug,
       },

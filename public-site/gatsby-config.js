@@ -1,11 +1,17 @@
 const path = require(`path`)
+require("dotenv").config()
+
+const siteURL = process.env.SITE_URL
 
 module.exports = {
   siteMetadata: {
     title: `Heroines of Javascript`,
-    description: `The roberttables livestream project that presents and accessible form of
-      the limited edition 'Heroines of Javascript' card project.`,
+    description: `Online version of the limited-edition card series 'Heroines of Javascript' card project.`,
     author: `David Poindexter (roberttables)`,
+    siteUrl: siteURL,
+    url: `https://women-in-tech.online`,
+    twitterUsername: "@vuevixens",
+    image: "/ogimage/default.jpg",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -17,7 +23,6 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
-
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -44,16 +49,39 @@ module.exports = {
         team: [
           {
             Developer: `David Poindexter`,
+            Github: `mtheoryx`,
+            Twitter: `@drpoindexter`,
           },
           {
-            Developer: `roberttable livestream`,
+            Developer: `roberttables' livestream`,
+            Site: `https://www.twitch.tv/roberttables`,
           },
         ],
         thanks: [`Gatsby`, `Node`, `Twitch`, `AWS Amplify`],
+        site: {
+          "Last update": `${new Date().getMonth()}/${new Date().getDate()}/${new Date().getFullYear()}`,
+          Standards: `ECMAScript 6`,
+          Components: `Gatsby`,
+          Softwares: `VS Code`,
+        },
         note: `Made in Indianapolis with <3`,
       },
     },
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        createLinkInHead: true,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: `https://women-in-tech.online`,
+        sitemap: `https://women-in-tech.online/sitemap.xml`,
+        policy: [{ userAgent: "*", disallow: "" }],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
