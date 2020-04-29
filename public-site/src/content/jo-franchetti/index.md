@@ -5,6 +5,7 @@ cardBack: "./jo-franchetti-back.jpeg"
 thumbnail: "./jo-franchetti.png"
 title: "Developer Advocate"
 color: "#ffff7e"
+ogcolor: "fire"
 links:
   - github: "thisisjofrank"
   - mastadon: "thisisjofrank"

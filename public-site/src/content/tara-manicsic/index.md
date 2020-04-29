@@ -5,6 +5,7 @@ cardBack: "./tara-z-manicsic-back.jpeg"
 thumbnail: "./tara-manicsic.png"
 title: "Developer Advocate"
 color: "#009dbb"
+ogcolor: "teal"
 links:
   - github: "tzmanics"
   - instagram: "tzmanics"
