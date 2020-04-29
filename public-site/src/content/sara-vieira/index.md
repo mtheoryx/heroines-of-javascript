@@ -6,6 +6,7 @@ thumbnail: "./sara-vieira.png"
 title: "Developer"
 color: "#009c54"
 ogcolor: "green"
+ogimage: "sarah-drasner.jpg"
 links:
   - github: "SaraVieira"
   - twitter: "NikkitaFTW"

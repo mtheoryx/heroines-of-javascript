@@ -6,6 +6,7 @@ thumbnail: "./simona-cotin.png"
 title: "Developer Advocate"
 color: "#7980b1"
 ogcolor: "purple"
+ogimage: "simona-cotin.jpg"
 links:
   - github: "simonaco"
   - twitter: "simona_cotin"

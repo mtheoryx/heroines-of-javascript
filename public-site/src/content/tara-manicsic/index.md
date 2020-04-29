@@ -6,6 +6,7 @@ thumbnail: "./tara-manicsic.png"
 title: "Developer Advocate"
 color: "#009dbb"
 ogcolor: "teal"
+ogimage: "tara-manicsic.jpg"
 links:
   - github: "tzmanics"
   - instagram: "tzmanics"

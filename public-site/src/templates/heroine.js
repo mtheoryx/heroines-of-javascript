@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Helmet from "react-helmet"
 import Social from "../components/social"
 
 const Main = styled.div`
@@ -32,7 +33,10 @@ const Secondary = styled.div`
 const HeroinePage = ({ data }) => {
   return (
     <Layout color={data.markdownRemark.frontmatter.color}>
-      <SEO title={data.markdownRemark.frontmatter.heroine} />
+      <SEO
+        title={data.markdownRemark.frontmatter.heroine}
+        image={data.markdownRemark.frontmatter.ogimage}
+      />
 
       <Main>
         <Primary>
@@ -81,6 +85,7 @@ export const query = graphql`
         heroine
         color
         title
+        ogimage
         thumbnail {
           childImageSharp {
             fluid {

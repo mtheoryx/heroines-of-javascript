@@ -6,6 +6,7 @@ thumbnail: "./diana-rodriguez.jpg"
 title: "Chief DevOps Architect"
 color: "#be2fc7"
 ogcolor: "purple"
+ogimage: "diana-rodriguez.jpg"
 links:
   - github: "alphacentauri82"
   - twitter: "cotufa82"

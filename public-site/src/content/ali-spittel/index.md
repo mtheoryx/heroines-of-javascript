@@ -6,6 +6,7 @@ thumbnail: "./ali-spittel.png"
 title: "Software Engineer"
 color: "#59dd6c"
 ogcolor: "green"
+ogimage: "ali-spittel.jpg"
 links:
   - github: "aspittel"
   - twitter: "aspittel"

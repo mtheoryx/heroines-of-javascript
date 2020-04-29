@@ -6,6 +6,7 @@ thumbnail: "./jo-franchetti.png"
 title: "Developer Advocate"
 color: "#ffff7e"
 ogcolor: "fire"
+ogimage: "jo-franchetti.jpg"
 links:
   - github: "thisisjofrank"
   - mastadon: "thisisjofrank"

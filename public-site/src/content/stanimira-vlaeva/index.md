@@ -6,6 +6,7 @@ thumbnail: "./stanimira-vlaeva.png"
 title: "Software Engineer"
 color: "#288dff"
 ogcolor: "blue"
+ogimage: "stanimira-vlaeva.jpg"
 links:
   - github: "sis0k0"
   - twitter: "StanimiraVlaeva"
