@@ -3,10 +3,12 @@ const path = require(`path`)
 module.exports = {
   siteMetadata: {
     title: `Heroines of Javascript`,
-    description: `The roberttables livestream project that presents and accessible form of
-      the limited edition 'Heroines of Javascript' card project.`,
+    description: `Online version of the limited-edition card series 'Heroines of Javascript' card project.`,
     author: `David Poindexter (roberttables)`,
     siteUrl: `https://women-in-tech.online`,
+    url: `https://women-in-tech.online`,
+    twitterUsername: "@vuevixens",
+    image: "/ogimage/default.jpg",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
