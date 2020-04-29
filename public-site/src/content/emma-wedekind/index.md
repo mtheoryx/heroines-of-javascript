@@ -6,6 +6,7 @@ thumbnail: "./emma-bostian.png"
 title: "UX Engineer"
 color: "#ff003d"
 ogcolor: "red"
+ogimage: "emma-bostian.jpg"
 links:
   - github: "emmabostian"
   - twitter: "EmmaBostian"

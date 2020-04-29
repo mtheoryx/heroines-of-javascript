@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Helmet from "react-helmet"
 import Social from "../components/social"
 
 const Main = styled.div`

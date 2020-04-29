@@ -6,6 +6,7 @@ thumbnail: "./angel-banks.png"
 title: "Software Developer"
 color: "#ff2752"
 ogcolor: "red"
+ogimage: "angel-banks.jpg"
 links:
   - instagram: "angel.m.banks"
   - twitter: "angelmbanks"

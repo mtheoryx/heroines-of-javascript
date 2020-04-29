@@ -6,6 +6,7 @@ thumbnail: "./nitya-narasimhan.png"
 title: "Developer Advocate"
 color: "#ff0022"
 ogcolor: "red"
+ogimage: "nitya-narasimhan.jpg"
 links:
   - github: "Nitya"
   - linkedin: "nityan"

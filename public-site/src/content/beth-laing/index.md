@@ -6,6 +6,7 @@ thumbnail: "./beth-laing.png"
 title: "Software Developer"
 color: "#aa263e"
 ogcolor: "red"
+ogimage: "beth-laing.jpg"
 links:
   - github: "laingbeth"
   - twitter: "laingbeth"

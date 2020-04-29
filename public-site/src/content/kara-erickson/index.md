@@ -6,6 +6,7 @@ thumbnail: "./kara-erickson.png"
 title: "Software Engineer"
 color: "#87d91a"
 ogcolor: "green"
+ogimage: "kara-erickson.jpg"
 links:
   - github: "kara"
   - twitter: "karaforthewin"

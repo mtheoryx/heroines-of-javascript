@@ -6,6 +6,7 @@ thumbnail: "./alyssa-nicoll.png"
 title: "Developer Advocate"
 color: "#f5dc28"
 ogcolor: "fire"
+ogimage: "alyssa-nicoll.jpg"
 links:
   - github: "AlyssaMichelle"
   - twitter: "AlyssaNicoll"

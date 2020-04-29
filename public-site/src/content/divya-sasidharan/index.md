@@ -6,6 +6,7 @@ thumbnail: "./divya-sasidharan.png"
 title: "Developer Advocate"
 color: "#ff9120"
 ogcolor: "fire"
+ogimage: "divya-sasidharan.jpg"
 links:
   - github: "shortdiv"
   - twitter: "shortdiv"

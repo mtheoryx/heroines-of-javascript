@@ -6,6 +6,7 @@ thumbnail: "./natalia-tepluhina.png"
 title: "Senior Frontend Developer"
 color: "#7b31d7"
 ogcolor: "purple"
+ogimage: "natalia-tepluhina.jpg"
 links:
   - github: "NataliaTepluhina"
   - twitter: "N_Tepluhina"

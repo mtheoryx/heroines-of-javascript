@@ -6,6 +6,7 @@ thumbnail: "./sarah-drasner.png"
 title: "Principal Developer Advocate"
 color: "#00b7c1"
 ogcolor: "teal"
+ogimage: "sarah-drasner.jpg"
 links:
   - github: ""
   - twitter: ""

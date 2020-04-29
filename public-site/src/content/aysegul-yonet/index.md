@@ -6,6 +6,7 @@ thumbnail: "./aysegul-yonet.png"
 title: "Software Engineer"
 color: "#ff0025"
 ogcolor: "red"
+ogimage: "aysegul-yonet.jpg"
 links:
   - github: "Yonet"
   - twitter: "AysSomething"
