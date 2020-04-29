@@ -5,7 +5,7 @@ module.exports = {
     title: `Heroines of Javascript`,
     description: `Online version of the limited-edition card series 'Heroines of Javascript' card project.`,
     author: `David Poindexter (roberttables)`,
-    siteUrl: `https://women-in-tech.online`,
+    siteUrl: `https://feat-24-add-og-images.dirm0g7b3lb7.amplifyapp.com/`,
     url: `https://women-in-tech.online`,
     twitterUsername: "@vuevixens",
     image: "/ogimage/default.jpg",
