@@ -29,6 +29,7 @@ function SEO({ description, lang, meta, title, image }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const ogimage = `/ogimage/${image}` || site.siteMetadata.image
 
   return (
     <Helmet
@@ -72,7 +73,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:image`,
-          content: `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`,
+          content: `${site.siteMetadata.siteUrl}${ogimage}`,
         },
       ].concat(meta)}
     />
@@ -90,6 +91,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  image: PropTypes.string,
 }
 
 export default SEO

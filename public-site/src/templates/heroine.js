@@ -33,7 +33,10 @@ const Secondary = styled.div`
 const HeroinePage = ({ data }) => {
   return (
     <Layout color={data.markdownRemark.frontmatter.color}>
-      <SEO title={data.markdownRemark.frontmatter.heroine} />
+      <SEO
+        title={data.markdownRemark.frontmatter.heroine}
+        image={data.markdownRemark.frontmatter.ogimage}
+      />
 
       <Main>
         <Primary>
@@ -82,6 +85,7 @@ export const query = graphql`
         heroine
         color
         title
+        ogimage
         thumbnail {
           childImageSharp {
             fluid {
