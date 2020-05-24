@@ -48,7 +48,7 @@ const HeroinesPage = ({ data }) => (
   <Layout>
     <SEO title="The Heroines of Javascript" />
     <CardContainer>
-      {data.Heroines.edges.map(({ node }) => (
+      {data.allMdx.nodes.map((node) => (
         <Card color={node.frontmatter.color} key={node.id}>
           <Link to={node.fields.slug}>
             <h2>{node.frontmatter.heroine}</h2>
@@ -69,29 +69,25 @@ export default HeroinesPage
 
 export const pageQuery = graphql`
   query {
-    Heroines: allMarkdownRemark(
-      sort: { fields: frontmatter___heroine, order: ASC }
-    ) {
-      edges {
-        node {
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            heroine
-            title
-            color
-            thumbnail {
-              childImageSharp {
-                fluid(maxWidth: 300) {
-                  ...GatsbyImageSharpFluid
-                }
+    allMdx(sort: { fields: frontmatter___heroine, order: ASC }) {
+      nodes {
+        id
+        fields {
+          slug
+        }
+        frontmatter {
+          heroine
+          title
+          color
+          thumbnail {
+            childImageSharp {
+              fluid(maxWidth: 300) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
-          excerpt(truncate: true, pruneLength: 80)
         }
+        excerpt(truncate: true, pruneLength: 80)
       }
     }
   }
