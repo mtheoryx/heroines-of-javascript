@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import Img from "gatsby-image"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Helmet from "react-helmet"
 import Social from "../components/social"
 
 const Main = styled.div`
@@ -31,45 +31,30 @@ const Secondary = styled.div`
 `
 
 const HeroinePage = ({ data }) => {
+  const post = data.mdx
+  const meta = data.mdx.frontmatter
   return (
-    <Layout color={data.markdownRemark.frontmatter.color}>
-      <SEO
-        title={data.markdownRemark.frontmatter.heroine}
-        image={data.markdownRemark.frontmatter.ogimage}
-      />
+    <Layout color={meta.color}>
+      <SEO title={meta.heroine} image={meta.ogimage} />
 
       <Main>
         <Primary>
-          <h1>{data.markdownRemark.frontmatter.heroine}</h1>
-          <p style={{ marginTop: "10px", fontSize: `1.5rem` }}>
-            {data.markdownRemark.frontmatter.title}
-          </p>
+          <h1>{meta.heroine}</h1>
+          <p style={{ marginTop: "10px", fontSize: `1.5rem` }}>{meta.title}</p>
 
-          <Social links={data.markdownRemark.frontmatter.links} />
+          <Social links={meta.links} />
 
-          <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+          <MDXRenderer>{post.body}</MDXRenderer>
         </Primary>
         <Secondary>
-          <Img
-            fluid={
-              data.markdownRemark.frontmatter.thumbnail.childImageSharp.fluid
-            }
-          />
+          <Img fluid={meta.thumbnail.childImageSharp.fluid} />
 
           <h3>Photos of the physical cards</h3>
           <h4>Front of Card</h4>
-          <Img
-            fluid={
-              data.markdownRemark.frontmatter.cardFront.childImageSharp.fluid
-            }
-          />
+          <Img fluid={meta.cardFront.childImageSharp.fluid} />
           <hr />
           <h4>Back of Card</h4>
-          <Img
-            fluid={
-              data.markdownRemark.frontmatter.cardBack.childImageSharp.fluid
-            }
-          />
+          <Img fluid={meta.cardBack.childImageSharp.fluid} />
         </Secondary>
       </Main>
     </Layout>
@@ -80,7 +65,7 @@ export default HeroinePage
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       frontmatter {
         heroine
         color
@@ -125,7 +110,7 @@ export const query = graphql`
           }
         }
       }
-      html
+      body
     }
   }
 `

@@ -5,8 +5,8 @@ FROM node:12.7.0-alpine as install
 WORKDIR /usr/app
 
 # Install Dependencies
-COPY ./package.json ./package-lock.json ./
-RUN npm i --silent
+COPY ./package.json ./yarn.lock ./
+RUN yarn install
 
 #
 # Create the application development layer
@@ -34,12 +34,12 @@ FROM node:12.7.0-alpine as production
 
 WORKDIR /usr/app
 # Install prod deps
-COPY ./package.json ./package-lock.json ./
-RUN npm i --production --silent
+COPY ./package.json ./yarn.lock ./
+RUN yarn install
 # Copy code from... somewhere
 COPY . .
 # Run a gatsby build production
-RUN npm run build
+RUN yarn build
 # Should just be static files (HTML, JS, CSS, Media assets)
 # For later copying
 
