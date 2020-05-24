@@ -46,9 +46,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "styled-components": "^4.3.2"
-  },
-  "devDependencies": {
+    "styled-components": "^4.3.2",
     "@storybook/react": "^5.3.5",
     "gatsby-transformer-remark": "^2.6.19"
   }
