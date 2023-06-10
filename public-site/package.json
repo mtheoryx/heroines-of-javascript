@@ -33,7 +33,7 @@
     "@storybook/react": "^5.3.5",
     "babel-plugin-styled-components": "^1.10.6",
     "dotenv": "^8.2.0",
-    "gatsby": "^2.13.45",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.2.7",
     "gatsby-plugin-humans-txt": "^1.1.4",
     "gatsby-plugin-manifest": "^2.2.4",
